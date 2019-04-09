@@ -13,9 +13,12 @@
     <button onclick="javascript:getText();">getText</button>
 </div>
 <div>
-    <button onclick="javascript:getImage();">getImage</button>
+    <button onclick="javascript:getImageEncodingBase64();">getImageEncodingBase64</button>
 </div>
 <img id="imgObj" src="">
+<div>
+    <img src="/getImageWithMediaType">
+</div>
 </body>
 <script src="webjars/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -31,9 +34,9 @@
             }
         });
     }
-    function getImage(){
+    function getImageEncodingBase64(){
         $.ajax({
-            url : "/getImage",
+            url : "/getImageEncodingBase64",
             method : "GET",
             success : function(data){
                 console.log(data);
@@ -43,6 +46,10 @@
                 console.log(data);
             }
         });
+    }
+
+    function getImageWithMediaType(){
+        window.location.href="/getImageWithMediaType";
     }
 </script>
 </html>
