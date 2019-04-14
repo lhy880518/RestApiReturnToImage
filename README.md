@@ -11,7 +11,7 @@
 * 이런생각이 시작이었다. 위의 encoding이미지값을 서버 혹은 클라이언트의 특정 저장소에 저장해놓고 만약 값을 가지고 있음이 판단된다면 네이버 api를 호출하지 말자 이런생각을 한 이유는 아래와 같다
 ![네이버 api변경사항](/src/main/resources/static/image/naverApiPay.png)
     올해까지만 무료래요
-* 클라이언트, 서버 저장공간? 아 세션, 쿠키, 캐시 - <https://gist.github.com/lhy880518/1d5e9c00df0c5c12db67756af85c885c/>
+* 클라이언트, 서버 저장공간을 이용해볼까?
     * 살펴보다보니 간과한 점이 보였다. 모든 저장공간 이라는것은 거기에 저장하면 자원을 사용하는 것이었다.
     * base64로 인코딩된 값을 세션,쿠키,캐시등에 저장하려는것은 각 그릇에 넘처흐를정도의 데이터를 담는 행위라는것을
     * 또한 옆에서 지켜보시던 한 개발자분께서 해당 api의 호출을 줄여서 요금정책에 이득을 가져 가는 부분은 
@@ -61,3 +61,9 @@
 ```
 
 > 참고사이트 - <https://lazymankook.tistory.com/74/>
+
+## 무엇을 배웠는가
+* [세션, 쿠키, 캐시](https://gist.github.com/lhy880518/1d5e9c00df0c5c12db67756af85c885c)
+* [자바의 역사](https://gist.github.com/lhy880518/6aa04d11b2b4fa38650dd23ce04182a9)
+* [서블릿의 개념](https://gist.github.com/lhy880518/b8a77c1325cb2b9baa54d868c6154ae2)
+* [톰캣의 역할과 개념](https://gist.github.com/lhy880518/3f60ebdc5f20a33fdeff4d3f64d88a8d)
